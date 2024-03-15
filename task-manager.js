@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Task from './task.js';
+import { TaskModel } from './taskModel.js';
 
 class TaskManager {
     constructor() {
@@ -10,7 +11,11 @@ class TaskManager {
         try {
             const data = fs.readFileSync(filepath, 'utf8');
             const tasksData = JSON.parse(data);
-            this.tasks = tasksData.map(task => new Task(task.id, task.description, task.status));
+            this.tasks = tasksData.map(task => {
+                const newTask = new TaskModel(task);
+                newTask.save();
+                return newTask;
+            } )
         } catch (err) {
             console.error('Ошибка чтения файла:', err);
         }
