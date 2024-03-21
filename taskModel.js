@@ -3,8 +3,7 @@ import mongoose from "mongoose";
 const taskSchema = new mongoose.Schema({
     id: String,
     description: String,
-    status: String,
-    }
-)
+    status: String
+    });
 
-export const TaskModel = mongoose.model('Task', taskSchema);
+export const TaskModel = mongoose.model('tasks', taskSchema);

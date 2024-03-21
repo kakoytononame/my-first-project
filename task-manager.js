@@ -34,13 +34,13 @@ class TaskManager {
     addTask(task) {
         this.tasks.push(task);
         this.saveTasks('tasks.json');
-        this.emit('taskAdded', task);
+        //this.emit('taskAdded', task);
     }
 
     deleteTask(taskId) {
         this.tasks = this.tasks.filter(task => task.id !== taskId);
         this.saveTasks('tasks.json');
-        this.emit('taskDeleted', taskId);
+        //this.emit('taskDeleted', taskId);
     }
 
     printTasks() {
