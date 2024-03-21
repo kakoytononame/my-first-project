@@ -21,7 +21,8 @@ const server = http.createServer((req, res) => {
 import express from 'express';
 import { TaskModel } from "./taskModel.js";
 import mongoose from "mongoose";
-import 'dotenv/config'
+import 'dotenv/config';
+import { validateTaskData } from './middleware/validateTaskData.js';
 const app = express();
 app.use(express.json());
 
@@ -49,11 +50,21 @@ app.get('/tasks', async(req, res) => {
     }
 });
 
-app.post('/tasks', async (req, res) =>{
+app.post('/tasks', validateTaskData, async (req, res) => {
     try{
         const newTask = new TaskModel(req.body);
-        const savedTask = new newTask.save();
+        const savedTask = newTask.save();
         res.status(201).json(savedTask);
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+});
+
+app.delete('/tasks/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        await TaskModel.findByIdAndDelete(id);
+        res.status(200).json({ message: 'Task deleted successfully' });
     } catch (err) {
         res.status(400).send(err.message);
     }

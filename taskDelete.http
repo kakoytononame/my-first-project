@@ -1,0 +1,9 @@
+DELETE http://localhost:5000/tasks/65f3b1b78cb193afb037618b
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+content-type: application/json; charset=utf-8
+content-length: 39
+etag: W/"27-urf4l4W7aUjEqcMghGgrIBDtf0M"
+date: Thu, 21 Mar 2024 21:10:55 GMT
+connection: close
