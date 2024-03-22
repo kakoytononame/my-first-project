@@ -23,8 +23,10 @@ import { TaskModel } from "./taskModel.js";
 import mongoose from "mongoose";
 import 'dotenv/config';
 import { validateTaskData } from './middleware/validateTaskData.js';
+import cors from 'cors';
 const app = express();
-app.use(express.json());
+
+app.use(cors(), express.json());
 
 mongoose.Promise = global.Promise;
 const mongoUrl = `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?authSource=admin`;
@@ -47,24 +49,29 @@ app.get('/tasks', async(req, res) => {
         res.json(tasks);
     } catch(err){
         res.status(500).send(err.message)
+        console.log(err.message)
     }
 });
 
 app.post('/tasks', validateTaskData, async (req, res) => {
     try{
+        
         const newTask = new TaskModel(req.body);
+        console.log(req.body)
         const savedTask = newTask.save();
         res.status(201).json(savedTask);
     } catch (err) {
         res.status(400).send(err.message);
+        console.log(err.message)
     }
 });
 
-app.delete('/tasks/:id', async (req, res) => {
+app.delete('/tasks', async (req, res) => {
     try {
-        const { id } = req.params;
-        await TaskModel.findByIdAndDelete(id);
-        res.status(200).json({ message: 'Task deleted successfully' });
+        const { tasksIds } = req.body;
+        console.log(tasksIds)
+        await TaskModel.deleteMany({ id: { $in: tasksIds } });
+        res.status(200).json({ message: 'Tasks deleted successfully' });
     } catch (err) {
         res.status(400).send(err.message);
     }

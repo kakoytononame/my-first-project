@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Задачи спринта</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="Top">
+        <h1 class="Top_text">Список задач</h1>
+    </header>
+    <section class="MainWorkZone">
+        <div class="CreateArea">
+            <div class="CreateBlock">
+                <div class="CreateBlock_top_string">
+                    <h2 class="CreateBlock_header">Новая задача</h2>
+                </div>
+                <div class="CreateBlock_bottom_string">
+                    <div class="NewTaskInput">
+                        <p>Название задачи</p></div>
+                    <button class="CreateTaskButton">+ Добавить</button>
+                </div>
+            </div>
+        </div>
+        <div class="TaskBoard">
+            <div class="TaskTypeSection">
+                <div class="TaskType" id = "BackLog">Бэклог</div>
+                <div class="Task" id = "BackLogTask">
+                    <p>Пинать аналитика</p>
+                </div>
+                <div class="Task" id = "BackLogTask">
+                    <p>Бегать от аналитика</p>
+                </div>
+                <div class="Task" id = "BackLogTask">
+                    <p>Бегать за аналитиком</p>
+                </div>
+                <div class="Task" id = "BackLogTask">
+                    <p>Прятаться от пма</p>
+                </div>
+            </div>
+            <div class="TaskTypeSection">
+                <div class="TaskType" id = "InWork">В работе</div>
+                <div class="Task" id = "InWorkTask">
+                    <p>Прятаться от пма</p>
+                </div>
+            </div>
+            <div class="TaskTypeSection">
+                <div class="TaskType" id = "Testing">На тестировании</div>
+                <div class="Task" id = "TestTask">
+                    <p>Положить сервер</p>
+                </div>
+                <div class="Task" id = "TestTask">
+                    <p>Удалить прод</p>
+                </div>
+                <div class="Task" id = "TestTask">
+                    <p>Уехать из страны</p>
+                </div>
+            </div>
+            <div class="TaskTypeSection">
+                <div class="TaskType" id = "Bucket">Корзина</div>
+                <div class="Task" id = "BucketTask">
+                    <p>Работать</p>
+                </div>
+                <div class="Task" id = "BucketTask">
+                    <p>Прочитать книгу "Чистый код"</p>
+                </div>
+                <div class="Task" id = "BucketTask">
+                    <p>Сходить на пары</p>
+                </div>
+                <button class="DeleteTask">
+                    <p>x Очистить</p>
+                </button>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

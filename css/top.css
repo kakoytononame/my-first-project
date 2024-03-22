@@ -1,0 +1,12 @@
+.Top{
+    width: 100%;
+    height: 100px;
+    background-color: #3300CC;
+    display: flex;
+    text-align: center;
+}
+
+.Top_text{
+    margin: auto 0 auto 150px;
+    color: white;   
+}

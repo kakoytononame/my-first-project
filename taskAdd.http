@@ -4,5 +4,16 @@ Content-Type: application/json
 {
     "id": "11",
     "description": "Новая задача",
-    "status": "в процессе"
+    "status": "в процессе",
+    "title": "adwwad"
 }
+
+HTTP/1.1 500  - Internal Server Error
+x-powered-by: Express
+access-control-allow-origin: *
+content-security-policy: default-src 'none'
+x-content-type-options: nosniff
+content-type: text/html; charset=utf-8
+content-length: 1522
+date: Fri, 22 Mar 2024 18:05:29 GMT
+connection: close

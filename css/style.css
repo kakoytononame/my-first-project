@@ -1,0 +1,15 @@
+@import url(../css/top.css);
+@import url(../css/workzone.css);
+@import url(../css/createtask.css);
+@import url(../css/taskboard.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 228, 255);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}

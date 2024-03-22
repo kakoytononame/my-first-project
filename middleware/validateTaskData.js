@@ -1,4 +1,5 @@
 export const validateTaskData = (req, res, next) => {
+    console.log(req.body)
     const { description, status} = req.body;
 
     if(!description || typeof description !== "string"){

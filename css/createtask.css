@@ -1,0 +1,72 @@
+.CreateArea{
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+.CreateBlock{
+    width: 40%;
+    height: 200px;
+    border: 0px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    background-color: white;
+    margin: 100px 0 auto 100px;
+}
+
+.CreateBlock_top_string{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: right;
+    margin: auto;
+}
+
+.CreateBlock_bottom_string{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: bottom;
+    margin: auto auto 0 auto;
+}
+
+.CreateBlock_header{
+    width: max-content;
+    height: max-content;
+    margin: auto 0 0 0;
+    display: flex;
+    font-size: 32px;
+    text-align: end;
+    justify-content: end;
+}
+
+.NewTaskInput{
+    width: 60%;
+    height: 50px;
+    color: rgb(216, 216, 216);
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-left: 5px;
+}
+
+.CreateTaskButton{
+    width: 35%;
+    height: 50px;
+    margin: auto;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: #3300CC;
+    color: white;
+    font-size: 18px;
+}

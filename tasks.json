@@ -2,54 +2,63 @@
   {
     "id": "1",
     "description": "Сделать задачу",
-    "status": "In Progress",
-    "_id": "65f3b1b78cb193afb037618b"
+    "status": "backlog",
+    "_id": "65f3b1b78cb193afb037618b",
+    "title": "Сделать задачу"
   },
   {
     "id": "3",
     "description": "Пофиксить баг",
-    "status": "Done",
-    "_id": "65f3b1b78cb193afb037618c"
+    "status": "backlog",
+    "_id": "65f3b1b78cb193afb037618c",
+    "title": "Сделать задачу"
   },
   {
     "id": "4",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b1b78cb193afb037618d"
+    "description": "Созвон 4",
+    "status": "backlog",
+    "_id": "65f3b1b78cb193afb037618d",
+    "title": "Сделать задачу"
   },
   {
     "id": "2",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b20bbfebfab0cb07319f"
+    "description": "Созвон 2",
+    "status": "inwork",
+    "_id": "65f3b20bbfebfab0cb07319f",
+    "title": "Сделать задачу"
   },
   {
     "id": "5",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b21f24d8af67c02a6343"
+    "description": "Созвон 5",
+    "status": "inwork",
+    "_id": "65f3b21f24d8af67c02a6343",
+    "title": "Сделать задачу"
   },
   {
     "id": "6",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b27e6db23cc7ac209655"
+    "description": "Созвон 6",
+    "status": "inwork",
+    "_id": "65f3b27e6db23cc7ac209655",
+    "title": "Сделать задачу"
   },
   {
     "id": "7",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b2a88eb89f6d304e3aec"
+    "description": "Созвон 7",
+    "status": "backet",
+    "_id": "65f3b2a88eb89f6d304e3aec",
+    "title": "Сделать задачу"
   },
   {
     "id": "8",
-    "description": "Созвон",
-    "status": "Pending",
-    "_id": "65f3b33645a0455ae22a10cb"
+    "description": "Созвон 8",
+    "status": "backet",
+    "_id": "65f3b33645a0455ae22a10cb",
+    "title": "Сделать задачу"
   },
   {
     "id": "9",
-    "description": "Созвон",
-    "status": "Pending"
+    "description": "Созвон 9",
+    "status": "testing",
+    "title": "Сделать задачу"
   }
 ]

@@ -1,0 +1,9 @@
+.MainWorkZone{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto 0 auto;
+}
